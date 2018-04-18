@@ -1,0 +1,35 @@
+<meta charset="utf-8">
+Meida da minha famila...
+<br>
+<script> 
+	
+	function pulaLinha(){
+
+		document.write("<br>");
+		document.write("<br>");
+
+	}
+
+	function mostra(frase){
+		
+		document.write(frase);
+		pulaLinha();
+
+	}
+
+	var totalDeFamiliares = parseInt(prompt("Informe quantas pessao tem na sua famila"));
+	var totalIdade = 0;
+	var   numero=1;
+
+	while(numero <= totalDeFamiliares){
+		
+		var idade = parseInt(prompt("Informe a idade do familiar"));
+		totalIdade = totalIdade + idade;
+		numero++;
+	}
+	var mediaDasIdades = totalIdade / totalDeFamiliares
+	mostra("media das idade dos familiares é: " + mediaDasIdades);
+
+	mostra("FIM");
+
+</script>

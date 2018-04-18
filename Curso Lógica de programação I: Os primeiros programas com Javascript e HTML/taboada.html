@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+Taboada
+<br>
+<script> 
+	
+	function pulaLinha(){
+
+		document.write("<br>");
+		document.write("<br>");
+
+	}
+
+	function mostra(frase){
+		
+		document.write(frase);
+		pulaLinha();
+
+	}
+
+	var Numero = parseInt(prompt("Digiti um multiplicador"));
+	
+	for(var i = 1; i <=10; i++ ){
+
+		var resultado =  Numero * i;
+		mostra( Numero + "x" + i + "=" + resultado);
+	}
+
+	mostra("FIM");
+
+</script>
